@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server dist/",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "npm-run-all --parallel devserver sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyhong-code/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyhong-code/portfolio/issues"
+  },
+  "homepage": "https://github.com/hyhong-code/portfolio#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  }
+}
