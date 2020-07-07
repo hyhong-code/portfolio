@@ -213,7 +213,10 @@ main {
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
       width: 100px;
-      height: 100px; } }
+      height: 100px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
