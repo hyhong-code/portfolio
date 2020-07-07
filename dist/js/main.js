@@ -1,14 +1,15 @@
+// HELPERS
 const $ = (slctstr) => document.querySelector(slctstr);
 const $all = (slctstr) => document.querySelectorAll(slctstr);
 
-// Select elements
+// SELECT ELEMENTS
 const menuBtn = $(".menu-btn");
 const menu = $(".menu");
 const menuNav = $(".menu-nav");
 const menuBranding = $(".menu-branding");
 const navItems = $all(".nav-item");
 
-// Set initial menu state
+// INITIALIZE MENU STATE
 let showMenu = false;
 menuBtn.addEventListener("click", toggleMenu);
 
@@ -20,7 +21,6 @@ function toggleMenu() {
     menuBranding.classList.add("show");
     navItems.forEach((item) => item.classList.add("show"));
 
-    // Set menu state
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
@@ -29,7 +29,6 @@ function toggleMenu() {
     menuBranding.classList.remove("show");
     navItems.forEach((item) => item.classList.remove("show"));
 
-    // Set menu state
     showMenu = false;
   }
 }
