@@ -155,6 +155,8 @@ main {
       padding: 0.5rem;
       font-size: 1.8rem;
       transition: all 0.3s ease-in-out; }
+      main .icons a:first-child {
+        margin-right: 1rem; }
       main .icons a:hover {
         color: #e43f5a; }
 
@@ -182,6 +184,11 @@ main {
     background: #1c2e5a;
     padding: 0.5rem;
     border-bottom: #e43f5a 5px solid; }
+  .about-info p {
+    line-height: 1.7; }
+  .about-info hr {
+    border: none;
+    border-top: 1px solid rgba(228, 63, 90, 0.3); }
 
 .projects {
   display: grid;
