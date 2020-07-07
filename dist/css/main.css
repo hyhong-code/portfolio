@@ -156,3 +156,15 @@ main {
       transition: all 0.3s ease-in-out; }
       main .icons a:hover {
         color: #e43f5a; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1.2;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
