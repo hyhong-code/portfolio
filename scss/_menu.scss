@@ -80,8 +80,55 @@
     @include easeInOut();
 
     &.show {
-      // SLIDE IN FROM TOP
+      // SLIDE IN FROM BOTTOM
       transform: translate3d(0, 0, 0);
     }
+
+    .portrait {
+      width: 150px;
+      height: 150px;
+      background: url("../img/portrait.jpeg") no-repeat center center/cover;
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
+    }
+  }
+
+  .nav-item {
+    transform: translate3d(600px, 0, 0);
+    @include easeInOut();
+
+    &.show {
+      // SLIDE IN FROM RIGHT
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current {
+      a {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .nav-link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    @include easeInOut();
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// DELAY EACH NAV ITEM SLIDE BY 0.1S
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 0.1s;
   }
 }
