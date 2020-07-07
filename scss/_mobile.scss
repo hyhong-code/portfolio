@@ -85,6 +85,16 @@
         }
       }
     }
+
+    &#contact {
+      .boxes > div {
+        padding: 0.5rem;
+
+        .contact-methods {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 
   .projects {
