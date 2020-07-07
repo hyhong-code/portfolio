@@ -1,0 +1,17 @@
+// MENU BUTTON
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  @include easeInOut();
+
+  .btn-bar {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+    @include easeInOut();
+  }
+}
