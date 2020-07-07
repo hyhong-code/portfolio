@@ -193,6 +193,11 @@ main {
     .projects img:hover {
       opacity: 0.5;
       border-color: #e43f5a; }
+  .projects p {
+    color: #ea6c80; }
+    .projects p span {
+      color: #e6e6e6;
+      font-size: 0.9rem; }
 
 .boxes {
   display: flex;

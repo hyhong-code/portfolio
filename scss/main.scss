@@ -135,6 +135,15 @@ main {
       border-color: $secondary-color;
     }
   }
+
+  p {
+    color: lighten($secondary-color, 10);
+
+    span {
+      color: darken(#fff, 10);
+      font-size: 0.9rem;
+    }
+  }
 }
 
 // CONTACT
