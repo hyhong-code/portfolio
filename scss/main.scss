@@ -92,6 +92,10 @@ main {
 
   grid-template-columns: repeat(3, 1fr);
 
+  strong {
+    color: $secondary-color;
+  }
+
   .bio-image {
     grid-area: bioimage;
     margin: auto;
